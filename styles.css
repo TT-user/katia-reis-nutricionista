@@ -385,9 +385,6 @@ section { padding: 96px 0; }
 .depoimentos-carrossel {
   position: relative;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
   mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
 }
@@ -397,10 +394,6 @@ section { padding: 96px 0; }
   gap: 24px;
   width: max-content;
   animation: depoimentos-scroll 65s linear infinite;
-}
-
-.depoimentos-track--reverso {
-  animation-direction: reverse;
 }
 
 .depoimentos-carrossel:hover .depoimentos-track,
@@ -442,7 +435,12 @@ section { padding: 96px 0; }
 .depoimento-idade { color: var(--text-soft); font-size: .85rem; }
 
 @media (max-width: 600px) {
-  .depoimentos-track { animation-duration: 42s; }
+  .depoimentos-track { animation-duration: 42s; gap: 16px; }
+  .depoimento-card { width: 240px; flex: 0 0 240px; padding: 20px; }
+  .depoimento-card p { font-size: .9rem; margin-bottom: 16px; }
+  .depoimento-avatar { width: 36px; height: 36px; font-size: .9rem; }
+  .depoimento-autor strong { font-size: .9rem; }
+  .depoimento-idade { font-size: .8rem; }
 }
 
 /* ===== Localização + FAQ ===== */
