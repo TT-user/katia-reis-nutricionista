@@ -585,3 +585,41 @@ section { padding: 96px 0; }
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ===== Páginas legais ===== */
+.legal {
+  padding: 64px 0 96px;
+}
+
+.legal .container { max-width: 760px; }
+
+.legal-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-soft);
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.legal-voltar:hover { color: var(--accent); }
+.legal-voltar i { width: 16px; height: 16px; }
+
+.legal h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); text-align: left; margin-bottom: 8px; }
+.legal .legal-atualizado { color: var(--text-soft); font-size: .85rem; margin-bottom: 40px; }
+
+.legal h2 {
+  font-size: 1.25rem;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.legal p, .legal li { color: var(--text-soft); font-size: 1rem; }
+.legal p { margin-bottom: 16px; }
+.legal ul { padding-left: 20px; margin-bottom: 16px; }
+.legal li { margin-bottom: 8px; }
+.legal strong { color: var(--text); }
+.legal a { color: var(--accent); }
