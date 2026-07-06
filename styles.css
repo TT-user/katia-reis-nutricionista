@@ -385,6 +385,9 @@ section { padding: 96px 0; }
 .depoimentos-carrossel {
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
 }
@@ -393,7 +396,11 @@ section { padding: 96px 0; }
   display: flex;
   gap: 24px;
   width: max-content;
-  animation: depoimentos-scroll 42s linear infinite;
+  animation: depoimentos-scroll 65s linear infinite;
+}
+
+.depoimentos-track--reverso {
+  animation-direction: reverse;
 }
 
 .depoimentos-carrossel:hover .depoimentos-track,
@@ -435,7 +442,7 @@ section { padding: 96px 0; }
 .depoimento-idade { color: var(--text-soft); font-size: .85rem; }
 
 @media (max-width: 600px) {
-  .depoimentos-track { animation-duration: 28s; }
+  .depoimentos-track { animation-duration: 42s; }
 }
 
 /* ===== Localização + FAQ ===== */
