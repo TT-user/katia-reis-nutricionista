@@ -231,6 +231,13 @@ section { padding: 96px 0; }
   .social-proof-card { left: 12px; }
 }
 
+@media (max-width: 600px) {
+  .hero { padding-top: 24px; }
+  .hero-inner { gap: 28px; }
+  .hero-media { order: 0; max-width: 190px; margin: 0 auto 12px; }
+  .social-proof-card { display: none; }
+}
+
 /* Marquee */
 .marquee {
   background: var(--card);
