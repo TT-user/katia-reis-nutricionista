@@ -33,15 +33,3 @@ document.querySelectorAll('.faq-item').forEach((item) => {
     }
   });
 });
-
-// Carrossel de depoimentos
-const track = document.getElementById('depoimentosTrack');
-const prevBtn = document.getElementById('depPrev');
-const nextBtn = document.getElementById('depNext');
-
-if (track && prevBtn && nextBtn) {
-  const scrollAmount = () => track.querySelector('.depoimento-card').offsetWidth + 24;
-
-  prevBtn.addEventListener('click', () => track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' }));
-  nextBtn.addEventListener('click', () => track.scrollBy({ left: scrollAmount(), behavior: 'smooth' }));
-}
