@@ -511,6 +511,9 @@ section { padding: 96px 0; }
 .cta-final-media { position: relative; text-align: right; }
 .cta-final-media img {
   border-radius: var(--radius-lg);
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
   margin-left: auto;
   transform: translateY(24px);
   box-shadow: 0 16px 40px rgba(30, 64, 52, .18);
